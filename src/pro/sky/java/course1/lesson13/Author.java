@@ -1,17 +1,24 @@
 package pro.sky.java.course1.lesson13;
 
 public class Author {
-   private String FirstName;
-   private String LastName;
+    private String firstName;
+    private String lastName;
 
-    public Author(String FirstName, String LastName) {
-        this.FirstName = FirstName;
-        this.LastName = LastName;
+    public Author(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
-    public String getFirstName(){
-        return this.FirstName;
+
+    public String getfirstName() {
+        return this.firstName;
     }
-    public String getLastName() {
-        return this.LastName;
+
+    public String getlastName() {
+        return this.lastName;
+    }
+
+    public String getFullName() {
+        String FullName = (this.firstName + " " +this.lastName);
+        return FullName;
     }
 }
