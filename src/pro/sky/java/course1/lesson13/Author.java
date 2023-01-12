@@ -21,7 +21,7 @@ public class Author {
         String FullName = (this.firstName + " " + this.lastName);
         return FullName;
     }
-
+    // для задачи 2
     @Override
     public String toString() {
         return firstName + " " + lastName;

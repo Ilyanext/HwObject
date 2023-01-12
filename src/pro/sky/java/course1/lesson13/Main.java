@@ -20,7 +20,7 @@ public class Main {
         System.out.println(("Новый год издательства книги: " + HeroOfOurTime.getAge()));
         System.out.println();
 
-        // Для задачи 2. Использую toString, чтобы вывести сообщения:
+        // Для задачи 2. Использую toString, чтобы вывести сообщения :
 
         System.out.println(new Book("Тарас Будьба", NikolaGogogl, 1835));
         System.out.println(new Book("Герой нашего времени", MihailLermontov, 1838));

@@ -27,6 +27,7 @@ public class Book {
         this.age = age;
     }
 
+    //для задачи2
     @Override
     public String toString() {
         return name + " " + author + " " + age;
@@ -39,7 +40,8 @@ public class Book {
         Book c2 = (Book) other;
         return name.equals(c2.name) && author.equals(c2.author);
     }
+
     public int hasCode() {
-        return java.util.Objects.hash(name,author,age);
+        return java.util.Objects.hash(name, author, age);
     }
 }
