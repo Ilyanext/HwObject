@@ -3,37 +3,37 @@ package pro.sky.java.course1.lesson13;
 public class Main {
     public static void main(String[] args) {
 
-        Author NikolaGogogl = new Author("Николай", "Гоголь");
-        Book TarasBulba = new Book("Тарас Бульба", NikolaGogogl, 1835);
-        System.out.println(("Название книги: " + TarasBulba.getName()));
-        System.out.println(("Год издания: " + TarasBulba.getAge()));
-        System.out.println(("Автор: " + TarasBulba.getAuthor().getFullName()));
+        Author nikolaGogogl = new Author("Николай", "Гоголь");
+        Book tarasBulba = new Book("Тарас Бульба", nikolaGogogl, 1835);
+        System.out.println(("Название книги: " + tarasBulba.getName()));
+        System.out.println(("Год издания: " + tarasBulba.getAge()));
+        System.out.println(("Автор: " + tarasBulba.getAuthor().getFullName()));
         System.out.println();
 
-        Author MihailLermontov = new Author("Михаил", "Лермонтов");
-        Book HeroOfOurTime = new Book("Герой нашего времени", MihailLermontov, 1838);
-        System.out.println(("Название книги: " + HeroOfOurTime.getName()));
-        System.out.println(("Год издания: " + HeroOfOurTime.getAge()));
-        System.out.println(("Автор: " + HeroOfOurTime.getAuthor().getFullName()));
+        Author mihailLermontov = new Author("Михаил", "Лермонтов");
+        Book heroOfOurTime = new Book("Герой нашего времени", mihailLermontov, 1838);
+        System.out.println(("Название книги: " + heroOfOurTime.getName()));
+        System.out.println(("Год издания: " + heroOfOurTime.getAge()));
+        System.out.println(("Автор: " + heroOfOurTime.getAuthor().getFullName()));
 
-        HeroOfOurTime.setAge(1900);
-        System.out.println(("Новый год издательства книги: " + HeroOfOurTime.getAge()));
+        heroOfOurTime.setAge(1900);
+        System.out.println(("Новый год издательства книги: " + heroOfOurTime.getAge()));
         System.out.println();
 
         // Для задачи 2. Использую toString, чтобы вывести сообщения :
 
-        System.out.println(new Book("Тарас Будьба", NikolaGogogl, 1835));
-        System.out.println(new Book("Герой нашего времени", MihailLermontov, 1838));
+        System.out.println(new Book("Тарас Будьба", nikolaGogogl, 1835));
+        System.out.println(new Book("Герой нашего времени", mihailLermontov, 1838));
 
         // сравниваю два объекта.
         Author NikolaGogogl2 = new Author("Николай", "Гоголь");
-        System.out.println(NikolaGogogl2.equals(NikolaGogogl));
-        System.out.println(MihailLermontov.equals(NikolaGogogl));
+        System.out.println(NikolaGogogl2.equals(nikolaGogogl));
+        System.out.println(mihailLermontov.equals(nikolaGogogl));
         System.out.println();
 
-        Book TarasBulba2 = new Book("Тарас Бульба", NikolaGogogl, 1835);
-        System.out.println(TarasBulba2.equals(TarasBulba));
-        System.out.println(HeroOfOurTime.equals(TarasBulba));
+        Book TarasBulba2 = new Book("Тарас Бульба", nikolaGogogl, 1835);
+        System.out.println(TarasBulba2.equals(tarasBulba));
+        System.out.println(heroOfOurTime.equals(tarasBulba));
     }
 
 }
