@@ -26,13 +26,13 @@ public class Main {
         System.out.println(new Book("Герой нашего времени", mihailLermontov, 1838));
 
         // сравниваю два объекта.
-        Author NikolaGogogl2 = new Author("Николай", "Гоголь");
-        System.out.println(NikolaGogogl2.equals(nikolaGogogl));
+        Author nikolaGogogl2 = new Author("Николай", "Гоголь");
+        System.out.println(nikolaGogogl2.equals(nikolaGogogl));
         System.out.println(mihailLermontov.equals(nikolaGogogl));
         System.out.println();
 
-        Book TarasBulba2 = new Book("Тарас Бульба", nikolaGogogl, 1835);
-        System.out.println(TarasBulba2.equals(tarasBulba));
+        Book tarasBulba2 = new Book("Тарас Бульба", nikolaGogogl, 1835);
+        System.out.println(tarasBulba2.equals(tarasBulba));
         System.out.println(heroOfOurTime.equals(tarasBulba));
     }
 
