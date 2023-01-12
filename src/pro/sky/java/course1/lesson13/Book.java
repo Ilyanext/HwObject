@@ -7,7 +7,7 @@ public class Book {
 
     public Book(String name, Author author, int age) {
         this.name = name;
-        this.author= author;
+        this.author = author;
         this.age = age;
     }
 
@@ -25,5 +25,21 @@ public class Book {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + author + " " + age;
+    }
+
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book c2 = (Book) other;
+        return name.equals(c2.name) && author.equals(c2.author);
+    }
+    public int hasCode() {
+        return java.util.Objects.hash(name,author,age);
     }
 }
