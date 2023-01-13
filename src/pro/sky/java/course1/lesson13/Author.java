@@ -21,6 +21,7 @@ public class Author {
         String FullName = (this.firstName + " " + this.lastName);
         return FullName;
     }
+
     // для задачи 2
     @Override
     public String toString() {
@@ -31,10 +32,17 @@ public class Author {
         if (this.getClass() != other.getClass()) {
             return false;
         }
+        if (this.getClass() == null) {
+            return false;
+        }
+        if (this == other) {
+            return true;
+        }
         Author c2 = (Author) other;
         return firstName.equals(c2.firstName) && lastName.equals(c2.lastName);
     }
+
     public int hasCode() {
-        return java.util.Objects.hash(lastName,firstName);
+        return java.util.Objects.hash(lastName, firstName);
     }
 }

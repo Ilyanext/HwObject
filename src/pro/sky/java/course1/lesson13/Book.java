@@ -37,6 +37,12 @@ public class Book {
         if (this.getClass() != other.getClass()) {
             return false;
         }
+        if (this.getClass() == null) {
+            return false;
+        }
+        if (this == other) {
+            return true;
+        }
         Book c2 = (Book) other;
         return name.equals(c2.name) && author.equals(c2.author);
     }
